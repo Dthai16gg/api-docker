@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  apidocker:
+    image: ${DOCKER_REGISTRY-}apidocker
+    build:
+      context: .
+      dockerfile: ApiDocker/Dockerfile
